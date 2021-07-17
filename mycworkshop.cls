@@ -209,6 +209,7 @@
             \hfill(#1)\parfillskip=0bp\finalhyphendemerits=0\par}}%
     \fi
     \everypar{\parskip\medskipamount\everypar{}}%
+    \sourcesanspro
   }{%
     \mycquote@ref
   }
