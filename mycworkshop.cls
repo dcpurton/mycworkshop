@@ -208,6 +208,7 @@
         {\unskip\nobreak\hfill\penalty50\hskip2em\hbox{}\nobreak
             \hfill(#1)\parfillskip=0bp\finalhyphendemerits=0\par}}%
     \fi
+    \everypar{\parskip\medskipamount\everypar{}}%
   }{%
     \mycquote@ref
   }
