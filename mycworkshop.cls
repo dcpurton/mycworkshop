@@ -14,7 +14,7 @@
 % The Current Maintainer of this work is David Purton.
 %
 % This work consists of the file mycworkshop.cls
-\ProvidesClass{mycworkshop}[2019/05/23 MYC Booklet Workshop Outline Class (DCP)]
+\ProvidesClass{mycworkshop}[2021/07/17 MYC Booklet Workshop Outline Class (DCP)]
 
 % must be compiled with lualatex
 \RequirePackage{ifluatex}
@@ -36,7 +36,8 @@
 \LoadClass[a5paper]{article}
 
 % required packages
-\RequirePackage[asymmetric,left=17mm,right=12mm,bindingoffset=6mm,top=12mm,bottom=17mm]{geometry}
+\RequirePackage[asymmetric,left=17mm,right=12mm,bindingoffset=6mm,
+  top=12mm,bottom=17mm,footskip=12.88mm]{geometry}
 \RequirePackage[protrusion=false]{microtype}
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[default,light,semibold,tabular]{sourcesanspro}
@@ -46,6 +47,8 @@
 \RequirePackage{bibleref-parse}
 \RequirePackage{enumitem}
 \RequirePackage{scrextend}
+\RequirePackage{fancyhdr}
+\RequirePackage{xcolor}
 \RequirePackage{atbegshi}
 \RequirePackage{silence}
 
@@ -57,6 +60,26 @@
 \parindent 0em
 \frenchspacing
 \flushbottom
+
+% MYC page style
+\fancypagestyle{myc}{%
+  \fancyhf{}%
+  \fancyfoot[RO]{%
+    \#MYC21\hspace{1mm}%
+    \fboxsep0pt%
+    \smash{\colorbox{black!40}{%
+      \raisebox{0.48mm}[5.25mm][7.6mm]{%
+        \makebox[9.854 mm][c]{\sourcesanspro\thepage}}}}}%
+  \fancyfoot[LE]{%
+    \fboxsep0pt%
+    \smash{\colorbox{black!40}{%
+      \raisebox{0.48mm}[5.25mm][7.6mm]{%
+        \makebox[9.854 mm][c]{\sourcesanspro\thepage}}}}%
+    \hspace{1mm}\#MYC21}%
+  \fancyfootoffset[Le]{5mm}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
 
 % no page numbers
 \pagestyle{empty}
