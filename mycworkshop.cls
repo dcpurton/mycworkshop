@@ -62,20 +62,22 @@
 \flushbottom
 
 % MYC page style
+\newcommand*{\mycfooter}{\#MYC}
 \fancypagestyle{myc}{%
   \fancyhf{}%
   \fancyfoot[RO]{%
-    \#MYC21\hspace{1mm}%
+    \sourcesanspro\Large\mycfooter\hspace{1mm}%
     \fboxsep0pt%
-    \smash{\colorbox{black!40}{%
+    \smash{\colorbox{black!35}{%
       \raisebox{0.48mm}[5.25mm][7.6mm]{%
-        \makebox[9.854 mm][c]{\sourcesanspro\thepage}}}}}%
+        \makebox[9.854 mm][c]{\sourcesansprolight\bfseries\thepage}}}}}%
   \fancyfoot[LE]{%
     \fboxsep0pt%
-    \smash{\colorbox{black!40}{%
+    \Large
+    \smash{\colorbox{black!35}{%
       \raisebox{0.48mm}[5.25mm][7.6mm]{%
-        \makebox[9.854 mm][c]{\sourcesanspro\thepage}}}}%
-    \hspace{1mm}\#MYC21}%
+        \makebox[9.854 mm][c]{\bfseries\thepage}}}}%
+    \hspace{1mm}\sourcesanspro\mycfooter}%
   \fancyfootoffset[Le]{5mm}%
   \renewcommand{\headrulewidth}{0pt}%
   \renewcommand{\footrulewidth}{0pt}%
