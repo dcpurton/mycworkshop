@@ -1,5 +1,5 @@
 %% mycworkshop.cls
-%% Copyright 2019 David Purton
+%% Copyright 2019-2021 David Purton
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
@@ -14,7 +14,7 @@
 % The Current Maintainer of this work is David Purton.
 %
 % This work consists of the file mycworkshop.cls
-\ProvidesClass{mycworkshop}[2021/07/17 MYC Booklet Workshop Outline Class (DCP)]
+\ProvidesClass{mycworkshop}[2021/07/18 MYC Booklet Workshop Outline Class (DCP)]
 
 % must be compiled with lualatex
 \RequirePackage{ifluatex}

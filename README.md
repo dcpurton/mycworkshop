@@ -28,7 +28,7 @@ There is no documentation except the source. An example workshop is provided in
 
 ```
 %% mycworkshop.cls
-%% Copyright 2019 David Purton
+%% Copyright 2019–2021 David Purton
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
